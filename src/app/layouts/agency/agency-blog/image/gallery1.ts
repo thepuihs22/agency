@@ -1,134 +1,21 @@
-const gal11 = [
-    {
-      srcUrl: 'assets/images/new/live/nikonschool/20200318_175807-Copy.jpg',
-      previewUrl: 'assets/images/new/live/nikonschool/20200318_175807-Copy.jpg',
-      name: 'Nikon School'
-    },
-    {
-        srcUrl: 'assets/images/new/live/nikonschool/20200325_184631.jpg',
-        previewUrl: 'assets/images/new/live/nikonschool/20200325_184631.jpg'
-    },
-    {
-      srcUrl: 'assets/images/new/live/nikonschool/3.jpg',
-      previewUrl: 'assets/images/new/live/nikonschool/3.jpg'
-    },
-    {
-      srcUrl: 'assets/images/new/live/nikonschool/4.jpg',
-      previewUrl: 'assets/images/new/live/nikonschool/4.jpg'
-    },
-    {
-      srcUrl: 'assets/images/new/live/nikonschool/5.jpg',
-      previewUrl: 'assets/images/new/live/nikonschool/5.jpg'
-    },
-    {
-      srcUrl: 'assets/images/new/live/nikonschool/6.jpg',
-      previewUrl: 'assets/images/new/live/nikonschool/6.jpg'
-    },
-    {
-      srcUrl: 'assets/images/new/live/nikonschool/7.jpg',
-      previewUrl: 'assets/images/new/live/nikonschool/7.jpg'
-    },
-    {
-      srcUrl: 'assets/images/new/live/nikonschool/8.jpg',
-      previewUrl: 'assets/images/new/live/nikonschool/8.jpg'
-    },
-    {
-      srcUrl: 'assets/images/new/live/nikonschool/9.jpg',
-      previewUrl: 'assets/images/new/live/nikonschool/9.jpg'
-    },
-    {
-      srcUrl: 'assets/images/new/live/nikonschool/10.jpg',
-      previewUrl: 'assets/images/new/live/nikonschool/10.jpg'
-    },
-    {
-      srcUrl: 'assets/images/new/live/nikonschool/11.jpg',
-      previewUrl: 'assets/images/new/live/nikonschool/11.jpg'
-    },
-    {
-      srcUrl: 'assets/images/new/live/nikonschool/12.jpg',
-      previewUrl: 'assets/images/new/live/nikonschool/12.jpg'
-    },
-    {
-      srcUrl: 'assets/images/new/live/nikonschool/13.jpg',
-      previewUrl: 'assets/images/new/live/nikonschool/13.jpg'
-    },
-    {
-      srcUrl: 'assets/images/new/live/nikonschool/14.jpg',
-      previewUrl: 'assets/images/new/live/nikonschool/14.jpg'
-    },
-    {
-      srcUrl: 'assets/images/new/live/nikonschool/15.jpg',
-      previewUrl: 'assets/images/new/live/nikonschool/15.jpg'
-    },
-    {
-      srcUrl: 'assets/images/new/live/nikonschool/16.jpg',
-      previewUrl: 'assets/images/new/live/nikonschool/16.jpg'
-    }
-];
+const gal11 = [];
+for(let i = 1; i <= 17; i++) {
+    gal11.push(  {
+        srcUrl: 'assets/images/photo/live/nikonschool/' + i +'.jpg',
+        previewUrl: 'assets/images/photo/live/nikonschool/' + i +'.jpg',
+        name: 'Buriram 2019'
+    });
+}
 
-const gal12 = [
-    {
-        srcUrl: 'assets/images/new/live/tokyo/1.jpg',
-        previewUrl: 'assets/images/new/live/tokyo/1.jpg',
-        name: 'Road to Tokyo'
-    },
-    {
-        srcUrl: 'assets/images/new/live/tokyo/2.jpg',
-        previewUrl: 'assets/images/new/live/tokyo/2.jpg'
-    },
-    {
-        srcUrl: 'assets/images/new/live/tokyo/3.jpg',
-        previewUrl: 'assets/images/new/live/tokyo/3.jpg'
-    },
-    {
-        srcUrl: 'assets/images/new/live/tokyo/4.jpg',
-        previewUrl: 'assets/images/new/live/tokyo/4.jpg'
-    },
-    {
-        srcUrl: 'assets/images/new/live/tokyo/5.jpg',
-        previewUrl: 'assets/images/new/live/tokyo/5.jpg'
-    },
-    {
-        srcUrl: 'assets/images/new/live/tokyo/6.jpg',
-        previewUrl: 'assets/images/new/live/tokyo/6.jpg'
-    },
-    {
-        srcUrl: 'assets/images/new/live/tokyo/7.jpg',
-        previewUrl: 'assets/images/new/live/tokyo/7.jpg'
-    },
-    {
-        srcUrl: 'assets/images/new/live/tokyo/8.jpg',
-        previewUrl: 'assets/images/new/live/tokyo/8.jpg'
-    },
-    {
-        srcUrl: 'assets/images/new/live/tokyo/9.jpg',
-        previewUrl: 'assets/images/new/live/tokyo/9.jpg'
-    },
-    {
-        srcUrl: 'assets/images/new/live/tokyo/10.jpg',
-        previewUrl: 'assets/images/new/live/tokyo/10.jpg'
-    },
-    {
-        srcUrl: 'assets/images/new/live/tokyo/11.jpg',
-        previewUrl: 'assets/images/new/live/tokyo/11.jpg'
-    },
-    {
-        srcUrl: 'assets/images/new/live/tokyo/12.jpg',
-        previewUrl: 'assets/images/new/live/tokyo/12.jpg'
-    },
-    {
-        srcUrl: 'assets/images/new/live/tokyo/13.jpg',
-        previewUrl: 'assets/images/new/live/tokyo/13.jpg'
-    },
-    {
-        srcUrl: 'assets/images/new/live/tokyo/14.jpg',
-        previewUrl: 'assets/images/new/live/tokyo/14.jpg'
-    },
-    {
-        srcUrl: 'assets/images/new/live/tokyo/15.jpg',
-        previewUrl: 'assets/images/new/live/tokyo/15.jpg'
-    }
-];
+
+const gal12 = [];
+for(let i = 1; i <= 15; i++) {
+    gal12.push(  {
+        srcUrl: 'assets/images/photo/live/tokyo/' + i +'.jpg',
+        previewUrl: 'assets/images/photo/live/tokyo/' + i +'.jpg',
+        name: 'Buriram 2019'
+    });
+}
 
 
 const ga21 = [];
@@ -484,8 +371,8 @@ for(let i = 1; i <= 7; i++) {
 const ga112 = [];
 for(let i = 1; i <= 10; i++) {
     ga112.push(  {
-        srcUrl: 'assets/images/photo/csr/canon redefine_library/' + i +'.jpg',
-        previewUrl: 'assets/images/photo/csr/canon redefine_library/' + i +'.jpg',
+        srcUrl: 'assets/images/photo/csr/canonredefine_library/' + i +'.jpg',
+        previewUrl: 'assets/images/photo/csr/canonredefine_library/' + i +'.jpg',
         name: 'Canon redefine library'
     });
 }
