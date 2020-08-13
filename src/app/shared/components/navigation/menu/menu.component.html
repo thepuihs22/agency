@@ -1,0 +1,72 @@
+<a  class="overlay-sidebar-header" [class.overlay-sidebar-header-open]="openSide" (click)="closeOverlay()"></a> 
+<div class="responsive-btn" *ngIf="this.isMobile">
+    <a (click)="toggleSidebar()">
+        <i class="fa fa-bars text-white" aria-hidden="true"></i>
+    </a>
+</div>
+<div *ngIf="!toggle && !this.isMobile">
+    <a (click)="toggleSidebarA()">
+        <i class="fa fa-bars text-white" aria-hidden="true"></i>
+    </a>
+</div>
+<div class="navbar_pui" id="togglebtn" *ngIf="!toggle && !isMobile && openSideA">
+    <div class="responsive-btn">
+        <a (click)="toggleSidebarA()">
+            <h5>back</h5>
+        </a>
+    </div>
+    <ul class="main-menu">
+        <li>
+            <a  href="javascript:void(0)" (click)="scroll('home')" class="text-center">
+                <span class="pui-font">Home</span>
+            </a>
+
+            <a  href="javascript:void(0)" (click)="scroll('experience')" class="text-center">
+                <span class="pui-font">About our<br>Experience</span>
+            </a>
+
+            <!-- <a  href="javascript:void(0)" (click)="scroll('counter')" class="text-center">
+                <span class="pui-font">Fact<br>About us</span>
+            </a> -->
+
+            <a  href="javascript:void(0)" (click)="scroll('service')" class="text-center">
+                <span class="pui-font">Fact<br>Service</span>
+            </a>
+
+            <a  href="javascript:void(0)" (click)="scroll('contact')" class="text-center">
+                <span class="pui-font">Contact</span>
+            </a>
+        </li>
+    </ul> 
+</div>
+<div class="navbar m-l-auto" id="togglebtn" [class.openSidebar]="openSide" *ngIf="(toggle && openSide) || (!toggle && openSide) || (toggle && !openSide)">
+    <div class="responsive-btn">
+        <a (click)="toggleSidebar()">
+            <h5>back</h5>
+        </a>
+    </div>
+    <ul class="main-menu">
+        <li>
+            <a  href="javascript:void(0)" (click)="scroll('home')" class="text-center">
+                <span class="pui-font">Home</span>
+            </a>
+
+            <a  href="javascript:void(0)" (click)="scroll('experience')" class="text-center">
+                <span class="pui-font">About our<br>Experience</span>
+            </a>
+
+            <!-- <a  href="javascript:void(0)" (click)="scroll('counter')" class="text-center">
+                <span class="pui-font">Fact<br>About us</span>
+            </a> -->
+
+            <a  href="javascript:void(0)" (click)="scroll('service')" class="text-center">
+                <span class="pui-font">Fact<br>Service</span>
+            </a>
+
+            <a  href="javascript:void(0)" (click)="scroll('contact')" class="text-center">
+                <span class="pui-font">Contact</span>
+            </a>
+        </li>
+    </ul> 
+</div>
+  

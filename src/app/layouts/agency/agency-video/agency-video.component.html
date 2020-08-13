@@ -1,0 +1,34 @@
+<!--video section start-->
+<section class="agency video video-bg p-0" id="contact" #contact [ngStyle]="{'background-image': 'url(assets/images/new/bg_contactus.png)'}">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="pui">
+                    <img src="assets/images/new/Contact-us.png" alt="" class="img-fluid img-pui">
+                    <img src="assets/images/new/_0000_messageImage_1589538408061.png" class="img-fluid" alt="">
+                    <br>
+                    <br>
+                    <img src="assets/images/new/Map.png" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="pt-flex">
+                    <agm-map [latitude]="lat" [longitude]="lng" class="map" [disableDefaultUI]="false"
+                    [zoomControl]="false" [zoom]="15">
+                        <agm-marker (markerClick)="updateDiv('pui')" 
+                            [latitude]="lat" 
+                            [longitude]="lng" 
+                            iconUrl="http://maps.google.com/mapfiles/ms/icons/blue-dot.png">
+                        <agm-info-window 
+                        [isOpen]="true" [disableAutoPan]="false" #infoWindow>
+                            iPulse Co,ltd,
+                            <a href="https://www.google.com/maps?q=13.653392999999999,100.591905">Go to google map</a>
+                          </agm-info-window>
+                        </agm-marker>
+                      </agm-map>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--video section end-->

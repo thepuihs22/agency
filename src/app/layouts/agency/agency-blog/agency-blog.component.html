@@ -1,0 +1,141 @@
+<!-- blog section start-->
+<section class="agency blog blog-bg" id="experience" #experience  [ngStyle]="{'background-image': 'url(assets/images/new/bg.png)'}">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="title">
+                    <div class="main-title">
+                        <img src="assets/images/new/About-our-experience.png" class="img-fluid img-edit">
+                        <!-- <h2 class="text-capitalize text-center">latest blog</h2> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-12" style="padding-bottom: 30px;">
+                <owl-carousel-o [options]="blogCarouselOptions">
+                    <ng-container *ngFor="let blog of tab1">
+                        <ng-template carouselSlide class="item">
+                            <div class="blog-agency">
+                                <div class="blog-contain" (click)="open([1, blog.number])">
+                                    <div class="text-center" style="padding-bottom: 10px;">
+                                        <span class="pui-font">{{ blog.name }}</span>
+                                    </div>
+                                    <img [src]="blog.img" class="img-fluid" >
+                                    <div class="img-container center-content">
+                                        <div class="center-content">
+                                            <div class="blog-info text-center">
+                                                <p class="para2">{{blog.title}}</p>
+                                                <hr>
+                                                <p class="para2">{{blog.description}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ng-container>
+                </owl-carousel-o>
+            </div>
+            <div class="col-12" style="padding-bottom: 30px;">
+                <owl-carousel-o [options]="blogCarouselOptions">
+                    <ng-container *ngFor="let blog of tab2">
+                        <ng-template carouselSlide class="item">
+                            <div class="blog-agency">
+                                <div class="blog-contain" (click)="open([2, blog.number])">
+                                    <div class="text-center" style="padding-bottom: 10px;">
+                                        <span class="pui-font">{{ blog.name }}</span>
+                                    </div>
+                                    <img [src]="blog.img" class="img-fluid">
+                                    <div class="img-container center-content">
+                                        <div class="center-content">
+                                            <div class="blog-info text-center">
+                                                <p class="para2">{{blog.title}}</p>
+                                                <hr>
+                                                <p class="para2">{{blog.description}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ng-container>
+                </owl-carousel-o>
+            </div>
+            <div class="col-12" style="padding-bottom: 30px;">
+                <owl-carousel-o [options]="blogCarouselOptions">
+                    <ng-container *ngFor="let blog of tab3">
+                        <ng-template carouselSlide class="item">
+                            <div class="blog-agency">
+                                <div class="blog-contain" (click)="open([3, blog.number])">
+                                    <div class="text-center" style="padding-bottom: 10px;">
+                                        <span class="pui-font">{{ blog.name }}</span>
+                                    </div>
+                                    <img [src]="blog.img" class="img-fluid">
+                                    <div class="img-container center-content">
+                                        <div class="center-content">
+                                            <div class="blog-info text-center">
+                                                <p class="para2">{{blog.title}}</p>
+                                                <hr>
+                                                <p class="para2">{{blog.description}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ng-container>
+                </owl-carousel-o>
+            </div>
+            <div class="col-12" style="padding-bottom: 30px;">
+                <owl-carousel-o [options]="blogCarouselOptions">
+                    <ng-container *ngFor="let blog of tab4">
+                        <ng-template carouselSlide class="item">
+                            <div class="blog-agency">
+                                <div class="blog-contain" (click)="open([4, blog.number])">
+                                    <div class="text-center" style="padding-bottom: 10px;">
+                                        <span class="pui-font">{{ blog.name }}</span>
+                                    </div>
+                                    <img [src]="blog.img" class="img-fluid">
+                                    <div class="img-container center-content">
+                                        <div class="center-content">
+                                            <div class="blog-info text-center">
+                                                <p class="para2">{{blog.title}}</p>
+                                                <hr>
+                                                <p class="para2">{{blog.description}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ng-container>
+                </owl-carousel-o>
+            </div>
+            <div class="col-12" style="padding-bottom: 30px;">
+                <owl-carousel-o [options]="blogCarouselOptions">
+                    <ng-container *ngFor="let blog of tab5">
+                        <ng-template carouselSlide class="item">
+                            <div class="blog-agency">
+                                <div class="blog-contain" (click)="open([5, blog.number])">
+                                    <div class="text-center" style="padding-bottom: 10px;">
+                                        <span class="pui-font">{{ blog.name }}</span>
+                                    </div>
+                                    <img [src]="blog.img" class="img-fluid">
+                                    <div class="img-container center-content">
+                                        <div class="center-content">
+                                            <div class="blog-info text-center">
+                                                <p class="para2">{{blog.title}}</p>
+                                                <hr>
+                                                <p class="para2">{{blog.description}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ng-container>
+                </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- blog section end-->

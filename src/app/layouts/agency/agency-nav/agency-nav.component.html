@@ -1,0 +1,16 @@
+<!-- Nav Start-->
+<header class="agency nav-abs custom-scroll " style="position: fixed;">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <nav>
+                    <a href="#" class="logo-light d-inline-block m-r-auto" *ngIf="this.test">
+                        <img src="assets/images/new/Logo.png" alt="" class="img-fluid puipui">
+                    </a>
+                    <app-menu (nameEvent)="nameEventHander($event)" ></app-menu>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Nav end-->

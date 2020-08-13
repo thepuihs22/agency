@@ -1,0 +1,67 @@
+.about-icon {
+    background: none !important;
+}
+
+.center-content {
+    img {
+        width: 200px;
+    }
+}
+
+li {
+    position: relative;
+    z-index: 1;
+}
+
+.absolute {
+    position: absolute;
+    left: -100px;
+    top: -235px;
+}
+
+.zi1 {
+    z-index: 1;
+}
+
+.zi-3 {
+    z-index: -3;
+}
+
+.zi6 {
+    z-index: 6;
+}
+
+.absolute2 {
+    position: absolute;
+    left: -100px;
+    top: 200px;
+}
+
+.relative {
+    position: relative;
+}
+
+@media only screen and (min-device-width: 360px){
+    .format-container {
+        img {
+            padding-top: 30px;
+        }
+    }
+}
+
+@media only screen and (min-device-width: 960px){  
+    .col-md-auto {
+        .row {
+            margin-right: -50px;
+            margin-left: -50px;
+        }
+    }
+
+    .center-text {
+        display: block;
+        h6 {
+            text-align: center;
+        }
+    }
+}
+

@@ -1,0 +1,107 @@
+<section class="agency format service-bg" id="service" #service [ngStyle]="{'background-image': 'url(assets/images/new/bg_service.png)'}">
+    <div class="container">
+        <div class="row">
+            <!-- <div class="col-2">
+                <div class="center-text">
+                    <div class="format-container">
+                        <h6 class="borders-before text-uppercase">
+                            <img src="assets/images/new/Service.png" style="width: 150px;" alt="">
+                            
+                        </h6>
+                    </div>
+                </div>
+            </div> -->
+            <div class="col-12">
+                <div class="row">
+                    <div class="center-text">
+                        <div class="format-container">
+                            <h6 class="borders-before text-uppercase">
+                                <img src="assets/images/new/Service.png" style="width: 150px;" alt="">
+                                <!-- <span class="">Our services</span> -->
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 center-content">
+                        <ul class="icon-collection" [@fadeInRight]="{ value: fadeInRight, params: { timing: 3, delay: 0 } }">
+                            <li class="about-icon" [ngClass]="{'zi-3' : data2 && !data1 }" (mouseover)="data(true, 1)" (mouseout)="data(false, 1)">
+                                <div class="center-content">
+                                    <div [hidden]="!data1" [ngClass]="{'absolute2' : data1 }">
+                                        <img style="width: 400px;" src="assets/images/new/text/_0008_Graphic-Design.png" alt=""> 
+                                    </div>
+                                    <img src="{{ !data1 ? 'assets/images/new/Icon/Icon1.png' : 'assets/images/new/IconColor/Icon1.png' }}" alt="">
+                                </div>
+                            </li>
+                            <li class="about-icon" [ngClass]="{'zi-3' : data1 && !data2 }" (mouseover)="data(true, 2)" (mouseout)="data(false, 2)">
+                                <div [hidden]="!data2" [ngClass]="{'absolute' : data2 }">
+                                    <img style="width: 400px;" src="assets/images/new/text/_0007_Perspective-Design.png" alt=""> 
+                                </div>
+                                <div style="position: relative;" class="center-content" placement="right" ngbTooltip="" tooltipClass="my-custom-class"><img src="{{ !data2 ? 'assets/images/new/Icon/Icon2.png' : 'assets/images/new/IconColor/Icon2.png' }}" alt="">
+                            </div>
+                            </li>
+                            <li class="about-icon" (mouseover)="data(true, 3)"  (mouseout)="data(false, 3)">
+                                <div [hidden]="!data3" [ngClass]="{'absolute' : data3 }">
+                                    <img style="width: 400px;" src="assets/images/new/text/_0006_Creative-&-Management.png" alt=""> 
+                                </div>
+                                <div class="center-content" placement="right" ngbTooltip="" tooltipClass="my-custom-class"><img src="{{ !data3 ? 'assets/images/new/Icon/Icon3.png' : 'assets/images/new/IconColor/Icon3.png' }}" alt="">
+                            </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 center-content">
+                        <ul class="icon-collection" [@fadeInRight]="{ value: fadeInRight, params: { timing: 3, delay: 2 } }">
+                            <li class="about-icon" [ngClass]="{'zi-3' : data5 && !data4 }" (mouseover)="data(true, 4)" (mouseout)="data(false, 4)">
+                                <div [hidden]="!data4" [ngClass]="{'absolute2' : data4 }">
+                                    <img style="width: 400px;" src="assets/images/new/text/_0005_Professional-Team.png" alt=""> 
+                                </div>
+                                <div class="center-content"><img src="{{ !data4 ? 'assets/images/new/Icon/Icon4.png' : 'assets/images/new/IconColor/Icon4.png' }}" alt="">
+                            </div>
+                            </li>
+                            <li class="about-icon" [ngClass]="{'zi-3' : data4 && !data5 }" (mouseover)="data(true, 5)" (mouseout)="data(false, 5)">
+                                <div [hidden]="!data5" [ngClass]="{'absolute' : data5}">
+                                    <img style="width: 400px;" src="assets/images/new/text/_0004_PR-service.png" alt=""> 
+                                </div>
+                                <div class="center-content"><img src="{{ !data5 ? 'assets/images/new/Icon/Icon5.png' : 'assets/images/new/IconColor/Icon5.png' }}" alt="">
+                            </div>
+                            </li>
+                            <li class="about-icon" (mouseover)="data(true, 6)" (mouseout)="data(false, 6)">
+                                <div [hidden]="!data6" [ngClass]="{'absolute' : data6 }">
+                                    <img style="width: 400px;" src="assets/images/new/text/_0003_VDO-production.png" alt=""> 
+                                </div>
+                                <div class="center-content"><img src="{{ !data6 ? 'assets/images/new/Icon/Icon6.png' : 'assets/images/new/IconColor/Icon6.png' }}" alt="">
+                            </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 center-content">
+                        <ul class="icon-collection" [@fadeInRight]="{ value: fadeInRight, params: { timing: 3, delay: 3 } }">
+                            <li class="about-icon"  [ngClass]="{'zi-3' : data8 && !data7 }" (mouseover)="data(true, 7)" (mouseout)="data(false, 7)">
+                                <div [hidden]="!data7" [ngClass]="{'absolute2' : data7 }">
+                                    <img style="width: 400px;" src="assets/images/new/text/_0002_Professional-Photograph.png" alt=""> 
+                                </div>
+                                <div class="center-content"><img src="{{ !data7 ? 'assets/images/new/Icon/Icon7.png' : 'assets/images/new/IconColor/Icon8.png' }}" alt="">
+                            </div>
+                            </li>
+                            <li class="about-icon" [ngClass]="{'zi-3' : data7 && !data8 }" (mouseover)="data(true, 8)" (mouseout)="data(false, 8)">
+                                <div [hidden]="!data8" [ngClass]="{'absolute' : data8}">
+                                    <img style="width: 400px;" src="assets/images/new/text/_0001_Online-communication.png" alt=""> 
+                                </div>
+                                <div class="center-content"><img src="{{ !data8 ? 'assets/images/new/Icon/Icon8.png' : 'assets/images/new/IconColor/Icon8.png' }}" alt="">
+                            </div>
+                            </li>
+                            <li class="about-icon" (mouseover)="data(true, 9)" (mouseout)="data(false, 9)">
+                                <div [hidden]="!data9" [ngClass]="{'absolute' : data9}">
+                                    <img style="width: 400px;" src="assets/images/new/text/_0000_Online-activity-.png" alt=""> 
+                                </div>
+                                <div class="center-content"><img src="{{ !data9 ? 'assets/images/new/Icon/Icon9.png' : 'assets/images/new/IconColor/Icon9.png' }}" alt="">
+                            </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--service section end-->
